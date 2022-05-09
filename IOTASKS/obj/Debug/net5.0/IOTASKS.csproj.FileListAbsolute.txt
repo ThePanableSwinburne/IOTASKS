@@ -1,0 +1,16 @@
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\obj\Debug\net5.0\IOTASKS.csproj.AssemblyReference.cache
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\obj\Debug\net5.0\IOTASKS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\obj\Debug\net5.0\IOTASKS.AssemblyInfoInputs.cache
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\obj\Debug\net5.0\IOTASKS.AssemblyInfo.cs
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\obj\Debug\net5.0\IOTASKS.csproj.CoreCompileInputs.cache
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\bin\Debug\net5.0\IOTASKS.exe
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\bin\Debug\net5.0\IOTASKS.deps.json
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\bin\Debug\net5.0\IOTASKS.runtimeconfig.json
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\bin\Debug\net5.0\IOTASKS.runtimeconfig.dev.json
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\bin\Debug\net5.0\IOTASKS.dll
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\bin\Debug\net5.0\IOTASKS.pdb
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\obj\Debug\net5.0\IOTASKS.dll
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\obj\Debug\net5.0\refint\IOTASKS.dll
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\obj\Debug\net5.0\IOTASKS.pdb
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\obj\Debug\net5.0\IOTASKS.genruntimeconfig.cache
+C:\Users\dhanr\source\repos\IOTASKS\IOTASKS\obj\Debug\net5.0\ref\IOTASKS.dll
