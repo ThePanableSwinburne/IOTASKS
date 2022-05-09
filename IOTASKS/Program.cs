@@ -6,13 +6,13 @@ using System.IO;
 
 namespace IOTASKS
 {
-    public class Items
+    public class Item
     {
 
         public string Title { get; set; }
         public int Quantity { get; set; }
         public int UnitPrice { get; set; }
-        public Items(string title, int quantity, int unitPrice)
+        public Item(string title, int quantity, int unitPrice)
         {
             Title = title;
             Quantity = quantity;
@@ -23,12 +23,12 @@ namespace IOTASKS
 
     internal class Program
     {
-        public static List<Items> ItemsList = new List<Items>(); 
+        public static List<Item> ItemsList = new List<Item>(); 
 
         public static void GetSelection()
         {
             Console.WriteLine("1. Add New Item");
-            Console.WriteLine("2. List All Items");
+            Console.WriteLine("2. List All Item");
             Console.WriteLine("3. Show Total Cost");
             Console.WriteLine("4. Clear List");
             Console.WriteLine("5. Save List");
@@ -72,7 +72,7 @@ namespace IOTASKS
             Console.WriteLine("Please enter the unit price of the item: ");
             int unitPrice = Int32.Parse(Console.ReadLine());
 
-            ItemsList.Add(new Items(title, quantity, unitPrice));
+            ItemsList.Add(new Item(title, quantity, unitPrice));
             Console.WriteLine("You have successfully added an item");
             
             GetSelection();
@@ -80,7 +80,7 @@ namespace IOTASKS
 
         public static void ListAllItems()
         {
-            Console.WriteLine("Items: ");
+            Console.WriteLine("Item: ");
             foreach (var item in ItemsList)
             {
                 Console.WriteLine($"Title: {item.Title}, Quantity {item.Quantity}, Unit Price: {item.UnitPrice}");
@@ -102,7 +102,7 @@ namespace IOTASKS
 
         public static void ClearList()
         {
-           ItemsList = new List<Items>(); 
+           ItemsList = new List<Item>(); 
            GetSelection();
         }
 
@@ -125,7 +125,23 @@ namespace IOTASKS
 
         static void Main(string[] args)
         {
+            LoadList();
             GetSelection();
+        }
+
+        private static void LoadList()
+        {
+            if (!File.Exists($@"{Environment.CurrentDirectory}\ShoppingList.csv")) return;
+            using StreamReader file = new StreamReader($@"{Environment.CurrentDirectory}\ShoppingList.csv");
+            int counter = 0;
+            string ln;
+
+            while ((ln = file.ReadLine()) != null)
+            {
+                string[] parts = ln.Split(',');
+                ItemsList.Add(new Item(parts[0], Int32.Parse(parts[1]), Int32.Parse(parts[2])));
+            }
+            file.Close();
         }
     }
 }
